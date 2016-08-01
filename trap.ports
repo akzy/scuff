@@ -1,0 +1,19 @@
+PORT
+
+#PSURFACE electrodetop	
+#PEDGES 7 9 
+
+PSURFACE electrode	
+PEDGES 74 77 
+
+#MSURFACE electrodetop  
+#MEDGES 33 437 83 1106
+
+MSURFACE electrode  
+MEDGES 7 117 55 786
+
+#MOBJECT al
+#MEDGES 80 81 82 83 
+
+ENDPORT
+

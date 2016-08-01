@@ -1,0 +1,8 @@
+# scuff-rf ran on (null) (07/29/16::11:15:28)
+# command-line arguments: 
+#scuff-rf --geometry trap.scuffgeo --portfile trap.ports --frequency 0.02 --Cache trap.cache --Zparameters --Sparameters 
+#
+# columns:
+# 1 frequency (GHz)
+# 2,3 real,imag S_{11} 
+2.000000e-02 1.000000e+00 -7.738303e-16 
