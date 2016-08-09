@@ -1,0 +1,69 @@
+REGION electrode MATERIAL PEC
+REGION dielectric MATERIAL CONST_EPS_2
+#REGION al MATERIAL PEC
+#REGION dielectricfull MATERIAL CONST_EPS_4
+#REGION si MATERIAL CONST_EPS_11.7
+#REGION Exterior MATERIAL VACUUM
+
+SURFACE electrodetop
+MESHFILE electrodetop.msh
+REGIONS Exterior electrode
+DISPLACED 0 0 0.002 
+ENDSURFACE
+
+SURFACE electrode
+MESHFILE electrode.msh
+REGIONS Exterior electrode
+ENDSURFACE
+
+SURFACE dielectricelectrode
+MESHFILE dielectricelectrode.msh
+REGIONS dielectric electrode
+ENDSURFACE
+
+SURFACE diext
+MESHFILE diext.msh
+REGIONS dielectric Exterior
+ENDSURFACE
+
+SURFACE dielectric
+MESHFILE dielectric.msh
+REGIONS Exterior dielectric
+DISPLACED 0 0 -0.005 
+ENDSURFACE
+
+SURFACE aldielectric
+MESHFILE aldielectric.msh
+REGIONS Exterior dielectric
+DISPLACED 0 0 -0.005
+ENDSURFACE
+
+SURFACE al
+MESHFILE al.msh
+REGIONS electrode Exterior
+DISPLACED 0 0 -0.0055
+ENDSURFACE
+
+SURFACE extal
+MESHFILE extal.msh
+REGIONS Exterior electrode
+DISPLACED 0 0 -0.0055
+ENDSURFACE
+
+#SURFACE dielectricfull
+#MESHFILE fullplane.msh
+#REGIONS dielectricfull Exterior
+#DISPLACED 0 0 -0.676
+#ENDSURFACE
+
+#SURFACE sidielectricfull
+#MESHFILE fullplane.msh
+#REGIONS si dielectricfull
+#DISPLACED 0 0 -0.676
+#ENDSURFACE
+
+#SURFACE si
+#MESHFILE fullplane.msh
+#REGIONS si Exterior
+#DISPLACED 0 0 -0.676
+#ENDSURFACE
