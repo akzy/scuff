@@ -1,0 +1,16 @@
+OBJECT electrode
+	MESHFILE electrode.msh
+	MATERIAL PEC
+	DISPLACED 0 0 0.002
+ENDOBJECT
+
+#OBJECT die
+    #MESHFILE dielectricsquare.msh
+    #MATERIAL CONST_EPS_3
+#ENDOBJECT
+
+#OBJECT dietop
+   # MESHFILE dielectrictop.msh
+    #MATERIAL CONST_EPS_3
+    #DISPLACED 0 0 0.002
+#ENDOBJECT
